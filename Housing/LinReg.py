@@ -20,12 +20,12 @@ rmse = mse ** 0.5
 mae = mean_absolute_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
 
-print(min(X['MedInc']), max(X['MedInc']))
 print('Средняя ошибка модели (По модулю):', mae)
 print('R^2 - score (Коэффицент детерминации):', r2)
 explainer = shap.Explainer(model, X_train)
 shap_values = explainer(X_train)
 shap.summary_plot(shap_values, X_train)
+shap.summary_plot(shap_values, X_train, plot_type="bar")
 features = X_test.columns.tolist()
 n_features = len(features)
 n_cols = 4
@@ -50,3 +50,4 @@ for j in range(i + 1, len(axes)):
 plt.suptitle("Графики зависимости SHAP для всех признаков", fontsize=16, y=1.02)
 plt.tight_layout()
 plt.show()
+shap.plots.waterfall(shap_values[0])
