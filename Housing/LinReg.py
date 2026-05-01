@@ -5,8 +5,10 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.preprocessing import StandardScaler
 import pandas as pd
 import shap
+
 import matplotlib.pyplot as plt
 import numpy as np
+
 housing = fetch_california_housing()
 model = LinearRegression()
 scaler = StandardScaler().set_output(transform="pandas")
