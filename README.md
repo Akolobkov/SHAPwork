@@ -1,0 +1,1 @@
+Кодовая база статьи "ВЕКТОРЫ ШЕПЛИ КАК ИНСТРУМЕНТ АНАЛИЗА СОГЛАСОВАННОСТИ МОДЕЛЕЙ МАШИННОГО ОБУЧЕНИЯ" (https://docs.google.com/document/d/1JLCUD62PK6mL8B8vdcV8J24PBOj8jqrnSC_VBSWS9s8/edit?usp=sharing)
